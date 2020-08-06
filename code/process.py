@@ -79,5 +79,5 @@ def merge_data_sets(datasets, years, min_90s):
 
 
 if __name__ == "__main__":
-    df = merge_data_sets(["passing", "shooting", "standard"], ["2020"], 0)
+    df = merge_data_sets(["passing", "shooting", "standard", "pass_type", "goal_creation", "defense"], ["2020"], 0)
     df.to_csv("output_data/player_data.csv")
